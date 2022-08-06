@@ -1,14 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Header from '../components/Header'
 
 
 const Home: NextPage = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline text-red-400">
-        Hello world!
-      </h1>
+      <Header />
     </div>
   )
 }
