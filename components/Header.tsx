@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
-import { ChevronDownIcon, HomeIcon, SearchIcon } from '@heroicons/react/solid';
-import { BeakerIcon } from '@heroicons/react/outline';
+import { ChevronDownIcon, HomeIcon, SearchIcon, MenuIcon } from '@heroicons/react/solid';
+import { SparklesIcon, BellIcon, ChatIcon, GlobeIcon, PlusIcon, SpeakerphoneIcon, VideoCameraIcon } from '@heroicons/react/outline';
 
 const Header = () => {
     return (
@@ -16,11 +16,24 @@ const Header = () => {
             </div>
 
             {/* Search Box */}
-            <form className="flex flex-1 items-center space-x-2 border border-gray-200 rounded-sm">
+            <form className="flex flex-1 items-center space-x-2 border border-gray-200 rounded-sm bg-gray-100 px-3 py-1">
                 <SearchIcon className='h-6 w-6 text-gray-400' />
-                <input type="text" placeholder="Search Reddit" />
+                <input className='flex-1 bg-transparent outline-none' type="text" placeholder="Search Reddit" />
                 <button type="submit" hidden />
             </form>
+            <div className=" text-gray-500 space-x-2 mx-5 hidden items-center lg:inline-flex">
+                <SparklesIcon className='icon' />
+                <GlobeIcon className='icon' />
+                <VideoCameraIcon className='icon' />
+                <hr className="h-10 border border-gray-100" />
+                <ChatIcon className='icon' />
+                <BellIcon className='icon' />
+                <PlusIcon className='icon' />
+                <SpeakerphoneIcon className='icon' />
+            </div>
+            <div className='ml-5 flex items-center lg:hidden'>
+                <MenuIcon className='icon' />
+            </div>
         </div>
     )
 }
