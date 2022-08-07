@@ -38,7 +38,6 @@ const Header: FunctionComponent = () => {
             <div className='ml-5 flex items-center lg:hidden'>
                 <MenuIcon className='icon' />
             </div>
-
             {/* Sign In and Sign Out */}
             {session ?
                 (
